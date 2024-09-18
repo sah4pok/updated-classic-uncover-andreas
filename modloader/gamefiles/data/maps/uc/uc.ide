@@ -1,0 +1,207 @@
+objs
+2884, iten_details7, firescape, 150, 4
+3136, LODfarmhouse, farmhouse, 1500, 128
+3223, uc_sw_bigburb_04, CE_burbhouse, 80, 2097156
+3224, uc_sw_bigburb_03, CE_burbhouse, 80, 2097156
+3225, uc_sw_bigburb_02, CE_burbhouse, 80, 2097156
+3226, uc_sw_bigburb_01, CE_burbhouse, 80, 2097156
+3227, uc_sw_bigburbsave2, CE_burbhouse, 80, 2097156
+3228, LODucswbigburb01, CE_burbLOD, 450, 128
+3229, LODucswbigburb02, CE_burbLOD, 450, 128
+3230, LODucswbigburb03, CE_burbLOD, 450, 128
+3231, LODucswbigburb04, CE_burbLOD, 450, 128
+3233, ferris02Tr_LAw2, pierb_law2, 150, 2097284
+3234, IslandLODcomIND, islandcomind, 3000, 2
+3235, gym_stairs, lring_gmint3, 50, 0
+3236, LODdes_ebrigroad10, lod_countn2, 1200, 128
+3237, hsheli_sfw, sfe_copchop, 150, 0
+3238, damoutlet, des_wdam, 200, 2097284
+3239, damlightsb, des_wdam, 200, 1
+3240, dambridgefence, des_wdam, 200, 8
+#4764, 
+4765, lae2_ground04_fnc, barrio1_lae2, 150, 2097156
+4766, smb_sculpture, kmb_beamx, 200, 1
+4767, telewires4cs, cw_wires2cs_t, 150, 2097156
+4768, telewires5cs, cw_wires2cs_t, 150, 2097156
+4769, telewires6cs, cw_wires2cs_t, 150, 2097156
+4770, telewires7cs, cw_wires2cs_t, 150, 2097156
+4771, telewires8cs, cw_wires2cs_t, 150, 2097156
+4772, telewires9cs, cw_wires2cs_t, 150, 2097156
+4773, telewires10cs, cw_wires2cs_t, 150, 2097156
+4774, telewires11cs, cw_wires2cs_t, 150, 2097156
+4775, telewires12cs, cw_wires2cs_t, 150, 2097156
+4776, telewires13cs, cw_wires2cs_t, 150, 2097156
+4777, telewires14cs, cw_wires2cs_t, 150, 2097156
+4778, telewires15cs, cw_wires2cs_t, 150, 2097156
+4778, LODdamoutlet, des_wdam, 1500, 2097284
+12780, fxsmoke30lit, signs, 2000, 128
+7393, gsrelit, mainlcawn, 100, 4
+7394, exteriorlit, relit_prop, 70, 4
+7395, litfluorcsnt, relit_prop, 100, 4
+7396, dambit_tow, des_wdam, 200, 1
+18883, barberpole_wallmoun, barberpole, 150, 1
+# FEF
+11952, rustysep, rustysep, 30, 0
+14899, friedchick, friedchick, 30, 0
+15525, hotdogfood, hotdogfood, 60, 0
+# Unknown objs
+16791, des_reffenc03_fnc, des_refinery, 299, 2097156
+13564, sw_gas01_tr, cunte_gas01, 299, 2097284
+17475, cuntwland60b_tr, cuntwlandwest, 299, 68
+17476, cuntwland74b_tr, cuntwlandwest, 299, 68
+17979, LBchApts1_tr_LAe2, eastbeach2a_lae2, 299, 132
+13892, cuntelungrdj_tr, lahillsgrounds, 299, 4
+13893, TCElawcnt1a_law2_tr, roads_tunnellahills, 299, 4
+6254, venlaw_grnd_wat, lawwhitebuilds, 299, 4
+#####
+##### LOD Vegetation
+#####
+12004, lodveg_tree7vbig, lod_veg, 1200, 2097284
+12005, lodveg_palwee03, lod_veg, 1200, 2097284
+12006, lodveg_tree3, lod_veg, 1200, 2097284
+12007, lodveg_treea1, lod_veg, 1200, 2097284
+12008, lodveg_treeb1, lod_veg, 1200, 2097284
+12009, lodveg_treea3, lod_veg, 1200, 2097284
+12010, lodveg_palm04, lod_veg, 1200, 2097284
+12011, lodveg_palm02, lod_veg, 1200, 2097284
+12012, lodveg_palm03, lod_veg, 1200, 2097284
+12013, lodveg_palwee01, lod_veg, 1200, 2097284
+12014, lodveg_palm01, lod_veg, 1200, 2097284
+12015, lodveg_palwee02, lod_veg, 1200, 2097284
+12016, lodveg_palmbig14, lod_veg, 1200, 2097284
+12017, lodsjmpalmbig, lod_veg, 1200, 2097284
+12018, lodpinetree08, lod_veg, 1200, 2097284
+12019, lodpinetree05, lod_veg, 1200, 2097284
+12020, lodpinetree04, lod_veg, 1200, 2097284
+12021, lodfirtree2, lod_veg, 1200, 2097284
+12022, lodsm_veg_tree4, lod_veg, 1200, 2097284
+12023, lodsm_firtallded, lod_veg, 1200, 2097284
+12024, lodsm_fir_, lod_veg, 1200, 2097284
+12025, lodsm_fir_scabby, lod_veg, 1200, 2097284
+12026, lodsm_fir_dead, lod_veg, 1200, 2097284
+12027, lodsm_redwood_, lod_veg, 1200, 2097284
+12028, lodveg_tree4_big, lod_veg, 1200, 2097284
+12029, lodsm_fir_scabt, lod_veg, 1200, 2097284
+12030, lodsm_fir_tall, lod_veg, 1200, 2097284
+12031, lodbg_fir_dead, lod_veg, 1200, 2097284
+12032, lodveg_tree7_big, lod_veg, 1200, 2097284
+12034, lodsm_bushvbig, lod_veg, 1200, 2097284
+12035, lodveg_tree4_vbig, lod_veg, 1200, 2097284
+12036, lodvegvbbigbrn, lod_veg, 1200, 2097284
+12037, lodveg_bevtree1, lod_veg, 1200, 2097284
+12038, lodveg_bevtree2, lod_veg, 1200, 2097284
+12039, lodveg_bevtree3, lod_veg, 1200, 2097284
+12040, lodhburytree4sfs, lod_veg, 1200, 2097284
+12041, lodveg_largefurs02, lod_veg, 1200, 2097284
+12042, lodveg_largefurs07, lod_veg, 1200, 2097284
+12043, lodveg_largefurs03, lod_veg, 1200, 2097284
+12044, lodveg_largefurs01, lod_veg, 1200, 2097284
+12045, lodveg_largefurs05, lod_veg, 1200, 2097284
+12046, lodveg_largefurs06, lod_veg, 1200, 2097284
+12047, lodveg_largefurs04, lod_veg, 1200, 2097284
+12048, lodvgs_palm01, lod_veg, 1200, 2097284
+12049, lodvgs_palm03, lod_veg, 1200, 2097284
+12050, lodVgsN_nitree_b01, lod_veg, 1200, 2097284
+12051, lodVgsN_nitree_g01, lod_veg, 1200, 2097284
+12052, lodVgsN_nitree_r01, lod_veg, 1200, 2097284
+12053, lodVgsN_nitree_y01, lod_veg, 1200, 2097284
+12054, lodvgs_palmvtall, lod_veg, 1200, 2097284
+12055, lodsjmpalmtall, lod_veg, 1200, 2097284
+12056, lodtree_hipoly19, lod_veg, 1200, 2097284
+12057, lodtree_hipoly04, lod_veg, 1200, 2097284
+12058, lodtree_hipoly07, lod_veg, 1200, 2097284
+12059, lodtree_hipoly08, lod_veg, 1200, 2097284
+12060, lodtree_hipoly09, lod_veg, 1200, 2097284
+12061, lodtree_hipoly11, lod_veg, 1200, 2097284
+12062, lodtree_hipoly14, lod_veg, 1200, 2097284
+12063, lodtree_hipoly09b, lod_veg, 1200, 2097284
+12064, lodceasertree01_lvs, lod_veg, 1200, 2097284
+12065, lodCedar3_hi, lod_veg, 1200, 2097284
+12066, lodCedar1_hi, lod_veg, 1200, 2097284
+12067, lodElmtreegrn_hi, lod_veg, 1200, 2097284
+12068, lodElmtreegrn2_hi, lod_veg, 1200, 2097284
+12069, lodLocust_hi, lod_veg, 1200, 2097284
+12070, lodsprucetree_hi, lod_veg, 1200, 2097284
+12071, lodElmred_hi, lod_veg, 1200, 2097284
+12072, lodElmdead_hi, lod_veg, 1200, 2097284
+12073, lodElmsparse_hi, lod_veg, 1200, 2097284
+12074, lodElmwee_hi, lod_veg, 1200, 2097284
+12075, lodHazelweetree_hi, lod_veg, 1200, 2097284
+12076, lodHazeltall_hi, lod_veg, 1200, 2097284
+12077, lodElmred_hism, lod_veg, 1200, 2097284
+12078, lodElmsparse_hism, lod_veg, 1200, 2097284
+12079, lodPinebg_hi, lod_veg, 1200, 2097284
+12080, lodsm_vegvbbig, lod_veg, 1200, 2097284
+12081, lodceasertree02_lvs, lod_veg, 1200, 2097284
+12082, lodsm_fir_group, lod_veg, 1200, 2097284
+12083, lodsm_fir_scabg, lod_veg, 1200, 2097284
+12084, lodsm_fir_copse1, lod_veg, 1200, 2097284
+12085, lodsm_fir_copse2, lod_veg, 1200, 2097284
+12087, lodsm_fir_scabtg, lod_veg, 1200, 2097284
+12088, lodsm_fir_tallgroup, lod_veg, 1200, 2097284
+12089, lodsm_veg_tree5, lod_veg, 1200, 2097284
+12090, lodpinetree07, lod_veg, 1200, 2097284
+12091, lodsm_veg_tree6, lod_veg, 1200, 2097284
+12092, lodsm_firtbshg, lod_veg, 1200, 2097284
+end
+tobj
+3232, vgegasstation_neon, vgegasstation_neon, 2000, 2097156, 21, 6
+4763, damlightsa, des_wdam, 2000, 4, 20, 7
+10311, churchlite3_6, churchlite, 1000, 130, 3, 6
+10312, churchlite20_24, churchlite, 1000, 130, 20, 24
+10313, churchlite24_3, churchlite, 1000, 130, 24, 3
+10314, churchlite20_6, churchlite, 1000, 130, 20, 6
+18632, jlneon, neontex, 2000, 4, 20, 6
+15329, lumos_pyramid_neon, lumos, 2000, 132, 20, 5
+15330, lumos_pyrbeamnt, lumos, 2000, 2097160, 20, 5
+15331, lumos_pyram01nt, lumos, 2000, 128, 20, 3
+15332, lumos_pyram02nt, lumos, 2000, 128, 3, 5
+15333, lumos_pyram03nt, lumos, 2000, 128, 5, 6
+4779, relit01, relitex, 2000, 140, 20, 6
+4780, relit02, relitex, 2000, 140, 20, 6
+4781, relit03, relitex, 2000, 140, 20, 6
+4782, relit04, relitex, 2000, 140, 20, 6
+4783, relit05, relitex, 2000, 140, 20, 6
+4784, relit06, relitex, 2000, 140, 20, 6
+4785, relit07, relitex, 2000, 140, 20, 6
+4786, relite11, relitex, 2000, 140, 20, 6
+4787, relite15, relitex, 2000, 140, 20, 6
+4788, neonscarshow, neonssf, 2000, 2097156, 21, 5
+4789, litbillbrdsf, neonssf, 2000, 2097156, 20, 5
+18631, bowln, neontex, 299, 4, 20, 6
+end
+2dfx
+end
+anim
+1682, ap_radar1_01, ap_misc1bit, ap_radar1_01, 250, 0
+18881, barberpole, barberpole, barberpole, 200, 0
+18882, barberpole_red, barberpole, barberpole_red, 200, 0
+end
+txdp
+# reLIT
+relitex, slapart01sfe
+neonssf, vgseneonwires
+# LA
+# , Gen_LA
+
+# SF
+# , Gen_SF
+
+# Vegas
+# , Gen_Vegas
+
+# CountryE
+# , Gen_CountE
+
+# CountryN
+# , Gen_CountN
+
+# CountryW
+# , Gen_CountW
+
+# Int
+# , Gen_Int
+
+# Cutscenes
+# , Gen_Cut
+end

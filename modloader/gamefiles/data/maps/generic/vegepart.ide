@@ -1,0 +1,185 @@
+objs
+615, veg_tree3, gta_tree_boak, 150, 2130052 # Done
+616, veg_treea1, gta_tree_boak, 150, 2130052 # Done
+617, veg_treeb1, gta_tree_boak, 150, 2097284 # Done
+618, veg_treea3, gta_tree_boak, 140, 2097284 # Done
+619, veg_palwee03, gta_tree_palm, 150, 2097284 # Done
+620, veg_palm04, gta_tree_palm, 150, 2146436 # Done
+621, veg_palm02, gta_tree_palm, 150, 2130052 # Done
+622, veg_palm03, gta_tree_palm, 150, 2130052 # Done
+623, veg_palwee01, gta_tree_palm, 150, 2097284
+624, veg_palwee02, gta_tree_palm, 150, 2113668 # Done
+625, veg_palmkb1, gta_potplantsaa, 45, 2097156
+626, veg_palmkb2, gta_potplants2, 45, 2097284
+627, veg_palmkb3, kbplantssmz, 45, 2097284
+628, veg_palmkb4, kbplantssmz2, 45, 2097284
+629, veg_palmkb5, gta_potplantsaa, 45, 2113540
+630, veg_palmkb8, gta_potplants, 22, 2097284
+631, veg_palmkb9, kbplantssmz, 22, 2097284
+632, veg_palmkb7, gta_potplantsaa, 35, 2097284
+633, veg_palmkb10, kbplantssmz2, 35, 2097284
+634, veg_palmkbb11, gta_potplantsaa, 45, 2113668
+635, veg_fern_balcny_kb1, veg_leaves, 45, 2097284
+636, veg_fern_balcny_kb2, veg_leaves, 45, 2097284
+637, kb_planterbox, veg_leaves, 40, 2097284
+638, kb_planter+bush, veg_leavesplnt, 40, 2097284
+639, veg_ivy_balcny_kb3, veg_leaves, 45, 2097284
+640, kb_planter+bush2, veg_leavesplnt, 45, 2097284
+641, veg_palmkb13, gta_tree_palm, 45, 2113668
+642, kb_canopy_test, canopy, 30, 2097280
+643, kb_chr_tbl_test, canopy, 30, 2097280
+644, pot_02, gta_potplants, 45, 2097284
+645, veg_palmbig14, gta_tree_palm, 150, 2113668 # Done
+646, veg_palmkb14, gta_potplants, 35, 2097284
+647, new_bushsm, gta_proc_bush, 100, 2097284
+648, veg_palm01, gta_tree_palm, 150, 2130052
+649, sjmpalm, gta_tree_palm, 100, 2113536
+650, sjmcacti2, gta_cactus, 59, 2097152
+651, sjmcacti1, gta_cactus, 99, 2097152
+652, sjmpalmbig, gta_tree_palm, 150, 2113540 # Done
+653, sjmcacti03, gta_cactus, 99, 2097152
+654, pinetree08, gta_tree_oldpine, 150, 2109444 # Done
+655, pinetree06, gta_tree_oldpine, 120, 2109444
+656, pinetree05, gta_tree_oldpine, 150, 2105348 # Done
+657, pinetree02, gta_tree_oldpine, 120, 2105348
+658, pinetree04, gta_tree_oldpine, 150, 2129924 # Done
+659, pinetree01, gta_tree_oldpine, 120, 2105348
+660, pinetree03, gta_tree_oldpine, 120, 2105348
+661, pinetree07, gta_tree_oldpine, 150, 2097156 # Done
+664, firtree2, gta_tree_oldpine, 299, 2129924 # Unused
+669, sm_veg_tree4, gta_tree_boak, 150, 2105476 # Done
+670, sm_firtallded, gta_tree_pine, 299, 2138244 # Done
+671, sm_bushytree, gta_tree_boak, 120, 2105476
+672, sm_veg_tree5, gta_tree_boak, 150, 2105476 # Done
+673, sm_bevhiltree, gta_tree_boak, 120, 2105476
+674, sm_des_josh_lrg1, gta_deserttrees, 99, 2105476
+675, josh_ball, gta_deserttrees, 35, 2097284
+676, sm_des_josh_sml1, gta_deserttrees, 70, 2105476
+677, sm_des_agave1, gta_deserttrees, 80, 2097284
+678, sm_des_agave2, gta_deserttrees, 80, 2097284
+679, sm_des_cact_bsh, gta_deserttrees, 80, 2097284
+680, sm_des_josh_lrg2, gta_deserttrees, 99, 2105476
+681, sm_des_josh_sm2, gta_deserttrees, 70, 2105476
+682, sm_des_cactflr, gta_deserttrees, 80, 2097284
+683, sm_fir_group, gta_tree_pine, 299, 2105476 # Unused
+684, sm_fir_log02, gta_tree_pine, 150, 2105476
+685, sm_fir_scabby, gta_tree_pine, 150, 2105476 # Unused
+686, sm_fir_dead, gta_tree_pine, 150, 2105476 # Unused
+687, sm_fir_, gta_tree_pine, 150, 2105476 # Done
+688, sm_fir_scabg, gta_tree_pine, 299, 2105476 # Not in Binary
+689, sm_fir_copse1, gta_tree_pine, 299, 2138244 # Done
+690, sm_fir_copse2, gta_tree_pine, 299, 2138244 # Done
+691, sm_veg_tree4_big, gta_tree_boak, 150, 2105476 # Done
+692, sm_des_bush1, gta_deserttrees, 25, 2097284
+693, sm_redwood_, gta_tree_pine, 299, 2130052 # Done
+694, sm_redwoodgrp, gta_tree_pine, 299, 2130052
+695, sm_fir_scabtg, gta_tree_pine, 299, 2138116 # Unused
+696, sm_fir_scabt, gta_tree_pine, 299, 2138116 # Done
+697, sm_fir_tall, gta_tree_pine, 299, 2138116 # Done
+698, sm_firtbshg, gta_tree_pine, 299, 2138116 # Done
+700, sm_veg_tree6, gta_tree_boak, 150, 2105476 # Done
+701, sm_tumblewd48p, badlands, 50, 2097156
+702, sm_tumbleweed, badlands, 50, 2097156
+703, sm_veg_tree7_big, gta_tree_boak, 150, 2105476 # Done
+704, bg_fir_dead, gta_tree_pine, 299, 2138244 # Unused
+705, sm_veg_tree7vbig, gta_tree_boak, 299, 2138244 # Done
+706, sm_vegvbbig, gta_tree_boak, 299, 2138244 # Done
+707, sm_bushvbig, gta_tree_boak, 299, 2138244 # Done
+708, sm_veg_tree4_vbig, gta_tree_boak, 299, 2138244 # Done
+709, sm_vegvbbigbrn, gta_tree_boak, 299, 2138244 # Done
+710, vgs_palm01, gta_tree_palm, 299, 2129924 # Done
+711, vgs_palm02, gta_tree_palm, 150, 2097156 # Done
+712, vgs_palm03, gta_tree_palm, 150, 2097156 # Done
+713, veg_bevtree1, gta_tree_boak, 299, 2138244 # Done
+714, veg_bevtree2, gta_tree_boak, 299, 2138244 # Done
+715, veg_bevtree3, gta_tree_boak, 150, 2097284 # Done
+716, sjmpalmbigpv, gta_tree_bevhills, 150, 2105348
+717, sm_bevhiltreepv, gta_tree_bevhills, 150, 2105476
+718, vgs_palm04, gta_tree_bevhills, 150, 2105348
+719, veg_largefurs07, gta_tree_pine, 299, 2130052 # Done
+720, veg_largefurs01, gta_tree_pine, 299, 2130052 # Done
+721, veg_largefurs02, gta_tree_pine, 299, 2130052 # Done
+722, veg_largefurs03, gta_tree_pine, 299, 2130052 # Done
+723, veg_largefurs04, gta_tree_pine, 299, 2130052 # Done
+724, veg_largefurs05, gta_tree_pine, 299, 2130052 # Done
+725, veg_largefurs06, gta_tree_pine, 299, 2130052 # Done
+726, tree_hipoly19, gtatreesh, 299, 2138116 # Done
+727, tree_hipoly04, gtatreesh04, 299, 2105348 # Done
+728, tree_hipoly06, gtatreeshi, 299, 2105348
+729, tree_hipoly07, gtatreeshi7, 299, 2105348 # Done
+730, tree_hipoly08, gtatreeshifir, 299, 2105348 # Done
+731, tree_hipoly09, gtatreeshi9, 299, 2138116 # Done
+732, tree_hipoly10, gtatreeshifir, 299, 2105348
+733, tree_hipoly11, gtatreesh, 299, 2105348 # Done
+734, tree_hipoly14, vegtresshi9b, 299, 2138116 # Done
+735, tree_hipoly09b, vegtresshi9b, 299, 2138116 # Done
+736, ceasertree01_lvs, gta_tree_boak, 150, 2097156 # Done
+737, aw_streettree3, gta_tree_bevhills, 150, 2105476
+738, aw_streettree2, gta_tree_bevhills, 150, 2109572
+739, sjmpalmtall, gta_tree_palm, 299, 2146308 # Not in Binary
+740, vgs_palmvtall, gta_tree_palm, 299, 2146308 # Not in Binary
+741, pot_01, gta_potplantsx, 35, 2097284
+742, pot_03, gta_potplantsx, 35, 2097284
+743, kb_pot_1, gta_potplantsx, 35, 2097284
+744, sm_scrub_rock4, gtarock_deserts, 99, 8
+745, sm_scrub_rock5, gtarock_deserts, 99, 4
+746, sm_scrub_rock2, gtarock_deserts, 99, 4
+747, sm_scrub_rock3, gtarock_deserts, 99, 4
+748, sm_scrb_grp1, gtarock_deserts, 99, 4
+749, sm_scrb_column3, gtarock_deserts, 99, 4
+750, sm_scrb_column2, gtarock_deserts, 99, 4
+751, sm_scrb_column1, gtarock_deserts, 99, 4
+752, sm_cunt_rock1, gta_rockcuntry, 99, 4
+753, sm_descactiigrpb, gta_deserttrees, 75, 2097284
+754, sm_des_cactiigrp, gta_deserttrees, 75, 2097284
+755, sm_des_pcklypr3, gta_deserttrees, 75, 2097284
+756, sm_des_pcklypr2, gta_deserttrees, 75, 2097284
+757, sm_des_pcklypr1, gta_deserttrees, 59, 2097284
+758, sm_scrub_rock6, gtarock_deserts, 99, 4
+759, sm_bush_large_1, badlands, 50, 2097156
+760, sm_bush_small_1, badlands, 50, 2097156
+761, sm_drybrush_sm1, badlands, 50, 2097156
+762, new_bushtest, gta_proc_bush, 150, 2097284
+763, Ash1_hi, tree3, 150, 2097156
+764, Cedar3_hi, tree2, 150, 2097156 # Done
+765, Cedar2_hi, tree2, 120, 2097156
+766, Cedar1_hi, tree2, 150, 2097156 # Done
+767, Elmtreegrn_hi, tree1, 150, 2097156 # Done
+768, Elmtreegrn2_hi, tree1, 150, 2097156 # Done
+769, Locust_hi, tree2, 150, 2097156 # Done
+770, Pinebg_hi, tree3, 150, 2097156
+771, sprucetree_hi, tree2, 150, 2129924 # Done
+772, Elmred_hi, tree1, 150, 2097156 # Done
+773, Elmdead_hi, tree2, 150, 2097156 # Done
+774, Elmsparse_hi, tree1, 150, 2097156 # Done
+775, Elmwee_hi, tree2, 150, 2097156 # Done
+776, Hazelweetree_hi, tree3, 150, 2097156 # Done
+777, Hazeltall_hi, tree3, 150, 2129924 # Done
+778, Elmred_hism, tree1, 150, 2097156 # Done
+779, Pinebg_hism, tree3, 150, 2097156 # Done
+780, Elmsparse_hism, tree1, 150, 2097156 # Done
+781, Elmwee_hism, tree2, 150, 2097156
+782, Elmtreegrn_hism, tree1, 150, 2097156
+783, lod_vegvbbigbrn, lod_veg, 600, 2097284 # Unused
+#784, lod_redwoodgrp, lod_veg, 600, 2097284
+#785, lod_vbg_fir_co, lod_veg, 600, 2130048
+784, lod_redwoodgrp, lod_veg, 2000, 2097284
+785, lod_vbg_fir_co, lod_veg, 2000, 2097284
+786, lod_largefurs06, lod_veg, 600, 2097280 # Unused
+787, lod_largefurs07, lod_veg, 600, 2097280 # Unused
+788, lod_largefurs05, lod_veg, 600, 2130048 # Unused
+789, hashburytree4sfs, gta_tree_boak, 150, 132 # Unused in UC
+790, sm_fir_tallgroup, gta_tree_pine, 299, 2138116 # Done
+791, vbg_fir_copse, gta_tree_pine, 299, 2130052
+792, aw_streettree1, gta_tree_bevhills, 150, 2109572
+end
+tobj
+end
+path
+end
+2dfx
+end
+anim
+end
+txdp
+end

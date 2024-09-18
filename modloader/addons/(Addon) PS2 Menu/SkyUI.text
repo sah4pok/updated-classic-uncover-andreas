@@ -1,0 +1,159 @@
+#
+# SkyUI
+# This file contains text strings that the mod uses.
+# Please ensure you change the correct strings, wrong strings will make the modification working improperly.
+# 
+
+#
+# Note: Text strings will not be displayed correctly if some of the UTF-8 encoding chars will be used.
+#
+
+[ENGLISH]
+UI_ENG0   = GAME
+UI_ENG1   = BRIEF
+UI_ENG2   = MAP
+UI_ENG3   = STATS
+UI_ENG4   = CONTROLLER
+UI_ENG5   = AUDIO
+UI_ENG6   = DISPLAY
+UI_ENG7   = GRAPHICS
+UI_ENG8   = ~x~ SELECT
+UI_ENG9   = ~o~ BACK
+UI_ENG10  = ~t~ BACK
+UI_ENG11  = ENTER - SELECT
+UI_ENG12  = ESC - BACK
+UI_ENG13  = ~u~~d~~<~~>~ MOVE
+UI_ENG14  = ~<~~>~ MOVE
+UI_ENG15  = ~<~~>~ ADJUST
+UI_ENG16  = ~u~~d~ SCROLL
+UI_ENG17  = ~M~~V~ Zoom in/out
+UI_ENG18  = WHEEL UP/DOWN - Zoom in/out
+UI_ENG19  = ~o~ Target on/off
+UI_ENG20  = ~q~ Target on/off
+UI_ENG21  = RMB - Target on/off
+UI_ENG22  = ~J~ Blip Menu
+UI_ENG23  = SPACE - Blip Menu
+UI_ENG24  = L - LEGEND ON/OFF
+UI_ENG25  = ~x~ LEGEND ON/OFF
+UI_ENG26  = ASPECT RATIO
+UI_ENG27  = AUTO
+
+[FRENCH]
+UI_FRE0   = JEU
+UI_FRE1   = BRIEFING
+UI_FRE2   = CARTE
+UI_FRE3   = STATS
+UI_FRE4   = MANETTE
+UI_FRE5   = AUDIO
+UI_FRE6   = VIDEO
+UI_FRE7   = GRAPHISMES
+UI_FRE8   = ~x~ SELECTION
+UI_FRE9   = ~o~ RETOUR
+UI_FRE10  = ~t~ RETOUR
+UI_FRE11  = ENTER - SÉLECTION 
+UI_FRE12  = ESC - RETOUR
+UI_FRE13  = ~u~~d~~<~~>~ SE DèPLACER
+UI_FRE14  = ~<~~>~ SE DèPLACER
+UI_FRE15  = ~<~~>~ AJUSTER
+UI_FRE16  = ~u~~d~ FAIRE DèFILER
+UI_FRE17  = ~M~~V~ Zoom avant/arrière
+UI_FRE18  = WHEEL UP/DOWN - Zoom avant/arrière
+UI_FRE19  = ~o~ Placer Marqueur
+UI_FRE20  = ~q~ Placer Marqueur
+UI_FRE21  = RMB - Placer Marqueur
+UI_FRE22  = ~J~ Menu Points
+UI_FRE23  = SPACE - Menu Points
+UI_FRE24  = L - Lègende
+UI_FRE25  = ~x~ Lègende
+UI_FRE26  = Ratio d'aspect
+UI_FRE27  = SCREEN
+
+[GERMAN]
+UI_GER0   = SPIEL
+UI_GER1   = INFO
+UI_GER2   = KARTE
+UI_GER3   = STATISTIK
+UI_GER4   = STEUERUNG
+UI_GER5   = AUDIO
+UI_GER6   = ANZEIGE
+UI_GER7   = GRAFIK
+UI_GER8   = ~x~ AUSWAEHLEN
+UI_GER9   = ~o~ ZURUECK
+UI_GER10  = ~t~ ZURUECK
+UI_GER11  = ENTER - AUSWAEHLEN
+UI_GER12  = ESC - ZURUECK
+UI_GER13  = ~u~~d~~<~~>~ BEWEGEN
+UI_GER14  = ~<~~>~ BEWEGEN
+UI_GER15  = ~<~~>~ EINSTELLEN
+UI_GER16  = ~u~~d~ SCROLLEN
+UI_GER17  = ~M~~V~ Heran-/Wegzoomen
+UI_GER18  = WHEEL UP/DOWN - Heran-/Wegzoomen
+UI_GER19  = ~o~ Markieren
+UI_GER20  = ~q~ Markieren
+UI_GER21  = RMB - Markieren
+UI_GER22  = ~J~ Symbolauswahl
+UI_GER23  = SPACE - Symbolauswahl
+UI_GER24  = L - KARTENLEGENDE
+UI_GER25  = ~x~ KARTENLEGENDE
+UI_GER26  = SEITENVERHAELTNIS
+UI_GER27  = GESAMTES SCHIRM
+
+[ITALIAN]
+UI_ITA0   = PARTITA
+UI_ITA1   = INFO
+UI_ITA2   = MAPPA
+UI_ITA3   = STATISTICHE
+UI_ITA4   = COMANDI
+UI_ITA5   = AUDIO
+UI_ITA6   = VIDEO
+UI_ITA7   = GRAFICA
+UI_ITA8   = ~x~ SELEZIONA
+UI_ITA9   = ~o~ INDIETRO
+UI_ITA10  = ~t~ INDIETRO
+UI_ITA11  = ENTER - SELEZIONA
+UI_ITA12  = ESC - INDIETRO
+UI_ITA13  = ~u~~d~~<~~>~ MUOVI
+UI_ITA14  = ~<~~>~ MUOVI
+UI_ITA15  = ~<~~>~ REGOLA
+UI_ITA16  = ~u~~d~ SCORRI
+UI_ITA17  = ~M~~V~ Zoom avanti/indietro
+UI_ITA18  = WHEEL UP/DOWN - Zoom avanti/indietro
+UI_ITA19  = ~o~ Attiva segnale
+UI_ITA20  = ~q~ Attiva segnale
+UI_ITA21  = RMB - Attiva segnale
+UI_ITA22  = ~J~ Segnali
+UI_ITA23  = SPACE - Segnali
+UI_ITA24  = L - Legenda SI/NO
+UI_ITA25  = ~x~ - Legenda SI/NO
+UI_ITA26  = PROPORZIONI
+UI_ITA27  = RIEMPI SCHERMO
+
+[SPANISH]
+UI_SPA0   = JUEGO
+UI_SPA1   = Informaciän
+UI_SPA2   = MAPA
+UI_SPA3   = Estadàsticas
+UI_SPA4   = MANDO
+UI_SPA5   = SONIDO
+UI_SPA6   = PANTALLA
+UI_SPA7   = GrÖficos
+UI_SPA8   = ~x~ SELECCIONAR
+UI_SPA9   = ~o~ ATRÖS 
+UI_SPA10  = ~t~ ATRÖS 
+UI_SPA11  = ENTER - SELECCIONAR
+UI_SPA12  = ESC - ATRÖS 
+UI_SPA13  = ~u~~d~~<~~>~ MOVER
+UI_SPA14  = ~<~~>~ MOVER
+UI_SPA15  = ~<~~>~ AJUSTAR
+UI_SPA16  = ~u~~d~ DESPLAZAR
+UI_SPA17  = ~M~~V~ Zoom +/-
+UI_SPA18  = WHEEL UP/DOWN - Zoom +/-
+UI_SPA19  = ~o~ Poner marca
+UI_SPA20  = ~q~ Poner marca
+UI_SPA21  = RMB - Poner marca
+UI_SPA22  = ~J~ Menu de iconos
+UI_SPA23  = SPACE - Menö de iconos
+UI_SPA24  = L - Leyenda SI/NO
+UI_SPA25  = ~x~ - Leyenda SI/NO
+UI_SPA26  = Proporciän
+UI_SPA27  = Ajustar a pantalla

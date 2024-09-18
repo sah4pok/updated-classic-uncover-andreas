@@ -1,0 +1,623 @@
+{$CLEO .cm}
+0000:
+while true   
+wait 0
+if
+        0AAB:   file_exists "Two Player Missions\Two Player Missions Options.ini"
+    then
+        0AF2: 7@ = get_float_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "GameplayOptions" key "SeparateVehicleDistance"
+        0AF0: 6@ = get_int_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "ScreenOptions" key "GXT"
+        
+        0AF0: 5@ = get_int_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "Hack" key "RemoveDistanceLimit"
+        0AF0: 4@ = get_int_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "ScreenOptions" key "Letterbox"
+        0AF0: 3@ = get_int_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "GameplayOptions" key "MuteSecondPlayer"
+        0AF2: 2@ = get_float_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "GameplayOptions" key "DistanceLimit"
+        0AF0: 1@ = get_int_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "GameplayOptions" key "EnterSeparateVehicles"
+        0AF0: 0@ = get_int_from_ini_file "Two Player Missions\Two Player Missions Options.ini" section "GameplayOptions" key "FriendlyFire"
+    else
+        7@=5.0    //SeparateVehicleDistance
+        6@=2      //GXT Table (PS2 or XBOX or PC)
+        5@=0      //DistanceHack
+        4@=1      //Letterbox
+        3@=1      //MuteSecondPlayer
+        2@=20.0   //DistanceLimit
+        1@=0      //EnterSeparatevehicles
+        0@=0      //FriendlyFire
+    end
+//-------------MAIN---------------
+thread 'PEDS_2P' 
+gosub @PEDS_2P_47 
+if 
+wasted_or_busted 
+jf @PEDS_2P_38 
+gosub @PEDS_2P_1754 
+
+:PEDS_2P_38
+gosub @PEDS_2P_2073 
+end_thread 
+
+:PEDS_2P_47
+09AC: disable_map_icons 1 
+00BE: text_clear_all 
+Player.ClearWantedLevel($PLAYER_CHAR)
+03C7: set_sensitivity_to_crime 0.0 
+0169: set_fade_color_RGB 0 0 0 
+00BE: text_clear_all 
+282@ = 0 
+283@ = 0 
+284@ = 0 
+291@ = 0 
+285@ = 0 
+
+:PEDS_2P_110
+286@(285@,5i) = 0 
+285@ += 1 
+  285@ >= 5 
+jf @PEDS_2P_110 
+$ONMISSION = 1 
+increment_mission_attempts 
+054C: use_GXT_table 'MENU2P' 
+gosub @PEDS_2P_2242 
+wait 0 
+Model.Load(#MP5LNG)
+Model.Load(#BFYPRO)
+
+:PEDS_2P_182
+if or
+   not Model.Available(#MP5LNG)
+   not Model.Available(#BFYPRO)
+jf @PEDS_2P_213 
+wait 0 
+jump @PEDS_2P_182 
+
+:PEDS_2P_213
+32@ = 0 
+01EB: set_traffic_density_multiplier_to 0.5 
+0395: clear_area 1 at 2510.633 1207.917 9.8281 radius 40.0 
+0871: init_jump_table $1845 total_jumps 9 default_jump 0 @PEDS_2P_1153 jumps 0 @PEDS_2P_379 1 @PEDS_2P_465 2 @PEDS_2P_551 3 @PEDS_2P_637 4 @PEDS_2P_723 5 @PEDS_2P_809 6 @PEDS_2P_895 
+0872: jump_table_jumps 7 @PEDS_2P_981 8 @PEDS_2P_1067 -1 @PEDS_2P_1153 -1 @PEDS_2P_1153 -1 @PEDS_2P_1153 -1 @PEDS_2P_1153 -1 @PEDS_2P_1153 -1 @PEDS_2P_1153 -1 @PEDS_2P_1153 
+
+:PEDS_2P_379
+Model.Load(#BUFFALO)
+
+:PEDS_2P_384
+if 
+   not Model.Available(#BUFFALO)
+jf @PEDS_2P_411 
+wait 0 
+jump @PEDS_2P_384 
+
+:PEDS_2P_411
+266@ = 15 
+267@ = 3 
+265@ = 180000 
+283@ = Car.Create(#BUFFALO, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_465
+Model.Load(#BUFFALO)
+
+:PEDS_2P_470
+if 
+   not Model.Available(#BUFFALO)
+jf @PEDS_2P_497 
+wait 0 
+jump @PEDS_2P_470 
+
+:PEDS_2P_497
+266@ = 15 
+267@ = 2 
+265@ = 120000 
+283@ = Car.Create(#BUFFALO, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_551
+Model.Load(#BUFFALO)
+
+:PEDS_2P_556
+if 
+   not Model.Available(#BUFFALO)
+jf @PEDS_2P_583 
+wait 0 
+jump @PEDS_2P_556 
+
+:PEDS_2P_583
+266@ = 15 
+267@ = 1 
+265@ = 60000 
+283@ = Car.Create(#BUFFALO, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_637
+Model.Load(#INFERNUS)
+
+:PEDS_2P_642
+if 
+   not Model.Available(#INFERNUS)
+jf @PEDS_2P_669 
+wait 0 
+jump @PEDS_2P_642 
+
+:PEDS_2P_669
+266@ = 20 
+267@ = 3 
+265@ = 180000 
+283@ = Car.Create(#INFERNUS, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_723
+Model.Load(#INFERNUS)
+
+:PEDS_2P_728
+if 
+   not Model.Available(#INFERNUS)
+jf @PEDS_2P_755 
+wait 0 
+jump @PEDS_2P_728 
+
+:PEDS_2P_755
+266@ = 20 
+267@ = 2 
+265@ = 120000 
+283@ = Car.Create(#INFERNUS, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_809
+Model.Load(#INFERNUS)
+
+:PEDS_2P_814
+if 
+   not Model.Available(#INFERNUS)
+jf @PEDS_2P_841 
+wait 0 
+jump @PEDS_2P_814 
+
+:PEDS_2P_841
+266@ = 20 
+267@ = 1 
+265@ = 60000 
+283@ = Car.Create(#INFERNUS, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_895
+Model.Load(#ZR350)
+
+:PEDS_2P_900
+if 
+   not Model.Available(#ZR350)
+jf @PEDS_2P_927 
+wait 0 
+jump @PEDS_2P_900 
+
+:PEDS_2P_927
+266@ = 25 
+267@ = 3 
+265@ = 180000 
+283@ = Car.Create(#ZR350, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_981
+Model.Load(#ZR350)
+
+:PEDS_2P_986
+if 
+   not Model.Available(#ZR350)
+jf @PEDS_2P_1013 
+wait 0 
+jump @PEDS_2P_986 
+
+:PEDS_2P_1013
+266@ = 25 
+267@ = 2 
+265@ = 120000 
+283@ = Car.Create(#ZR350, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_1067
+Model.Load(#ZR350)
+
+:PEDS_2P_1072
+if 
+   not Model.Available(#ZR350)
+jf @PEDS_2P_1099 
+wait 0 
+jump @PEDS_2P_1072 
+
+:PEDS_2P_1099
+266@ = 25 
+267@ = 1 
+265@ = 60000 
+283@ = Car.Create(#ZR350, 2510.633, 1207.917, 9.8281)
+jump @PEDS_2P_1153 
+
+:PEDS_2P_1153
+Car.Angle(283@) = 271.2962
+Car.DoorStatus(283@) = 4
+$SECOND_PLAYER = Player.Create(1, 2510.633, 1207.917, 9.8281)
+09C7: change_player $SECOND_PLAYER model_to #BFYPRO 
+$SECOND_PLAYER_ACTOR = Actor.EmulateFromPlayer($SECOND_PLAYER)
+if 
+   not Actor.Dead($PLAYER_ACTOR)
+jf @PEDS_2P_1330 
+Actor.PutAt($PLAYER_ACTOR, 2510.633, 1207.917, 9.8281)
+036A: put_actor $PLAYER_ACTOR in_car 283@ 
+0430: put_actor $SECOND_PLAYER_ACTOR into_car 283@ passenger_seat 0 
+0746: set_acquaintance 4 of_actors_pedtype 7 to_actors_pedtype 1 
+0746: set_acquaintance 1 of_actors_pedtype 8 to_actors_pedtype 1 
+Actor.GiveWeaponAndAmmo($SECOND_PLAYER_ACTOR, MP5, 30000)
+01B9: set_actor $SECOND_PLAYER_ACTOR armed_weapon_to 29 
+if 
+        0@==0
+    then 
+        06F3: set_players_can_target_eachother 0 
+        0568: set_actor $PLAYER_ACTOR untargetable 1                       //FRIENDLY FIRE = NO
+        0568: set_actor $SECOND_PLAYER_ACTOR untargetable 1
+    else
+        06F3: set_players_can_target_eachother 1 
+        0568: set_actor $PLAYER_ACTOR untargetable 0                       //FRIENDLY FIRE = YES
+        0568: set_actor $SECOND_PLAYER_ACTOR untargetable 0
+    end 
+06E0: set_2_player_camera_mode_to 2 
+06F1: set_2_player_distance_limit_to 2@      //Toggle via ini options
+06FA: allow_players_to_use_separate_vehicles 1@ //Both players can drive different vehicles at the same time...toggle via ini options 
+094E: set_actor $SECOND_PLAYER_ACTOR mute_pain_audio 3@
+
+//---------------------------GXT-----------------------------}
+09FB: get_current_language $CURRENT_LANGUAGE
+        if $CURRENT_LANGUAGE==0 //American
+        then      
+if 6@==0
+then
+    0ADF: add_dynamic_GXT_entry "RUN_XX" text "Player 2 : Push the ~H~left analog stick~w~ left or right to select a character.~N~~X~ Select"  //PS2 (American)
+    0ADF: add_dynamic_GXT_entry "RUN_06" text "~s~You can kiss the other player by standing near them and pressing ~K~."  //PS2 (American)
+
+else
+    if 6@==1
+    then
+        0ADF: add_dynamic_GXT_entry "RUN_XX" text "Player 2 : Push the ~H~left thumbstick~w~ left or right to select a character.~N~~X~ Select"   //XBOX (American)
+        0ADF: add_dynamic_GXT_entry "RUN_06" text "~s~To kiss the other player stand near them and pull ~K~."   //XBOX (American)
+    else
+    0AE0: remove_dynamic_GXT_entry "RUN_XX"   //PC (original)
+    0AE0: remove_dynamic_GXT_entry "RUN_06"   //PC (original)
+    end
+    end
+end 
+//---------------------------GXT-----------------------------}
+if
+    5@==1
+    then
+        //--------Prevent the 2p game from ending----------
+        0A8C: write_memory 0x442B5C size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x442B5D size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x442B5E size 1 value 0x90 virtual_protect 1
+
+        //Remove the shitty message
+        0A8C: write_memory 0x859894 size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x859895 size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x859896 size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x859897 size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x859898 size 1 value 0x90 virtual_protect 1
+        0A8C: write_memory 0x859899 size 1 value 0x90 virtual_protect 1
+        //--------------------------------------------------
+    else
+        0A8C: write_memory 0x442B5C size 1 value 0xF6 virtual_protect 1
+        0A8C: write_memory 0x442B5D size 1 value 0xC4 virtual_protect 1
+        0A8C: write_memory 0x442B5E size 1 value 0x41 virtual_protect 1
+
+        0A8C: write_memory 0x859894 size 1 value 0x57 virtual_protect 1
+        0A8C: write_memory 0x859895 size 1 value 0x52 virtual_protect 1
+        0A8C: write_memory 0x859896 size 1 value 0x4E virtual_protect 1
+        0A8C: write_memory 0x859897 size 1 value 0x5F virtual_protect 1
+        0A8C: write_memory 0x859898 size 1 value 0x32 virtual_protect 1
+        0A8C: write_memory 0x859899 size 1 value 0x50 virtual_protect 1
+    end 
+
+:PEDS_2P_1330
+gosub @PEDS_2P_2156 
+08F5: save_player_group 
+if and
+   Player.Defined($PLAYER_CHAR)
+   Player.Defined($SECOND_PLAYER)
+jf @PEDS_2P_1374 
+Player.CanMove($PLAYER_CHAR) = False
+Player.CanMove($SECOND_PLAYER) = False
+
+:PEDS_2P_1374
+Camera.SetPosition(2508.093, 1205.589, 11.1785, 0.0, 0.0, 0.0)
+Camera.PointAt(2509.017, 1205.957, 11.0761, 2)
+gosub @PEDS_2P_2283 
+if 
+   not 267@ == 1 
+jf @PEDS_2P_1479 
+02FD: show_text_2numbers_lowpriority GXT 'MENU_46' numbers 266@ 267@ time 5000 flag 1  // Shoot ~1~ pedestrians in ~1~ minutes.
+jump @PEDS_2P_1501 
+
+:PEDS_2P_1479
+02FD: show_text_2numbers_lowpriority GXT 'MENU_62' numbers 266@ 267@ time 5000 flag 1  // Shoot ~1~ pedestrians in ~1~ minute.
+
+:PEDS_2P_1501
+wait 5000 
+gosub @PEDS_2P_2197 
+008B: 353@ = $1845 // (int) 
+353@ += 1 
+01F9: init_rampage_gxt 'DUMMY' weapon 29 time_limit 265@ targets 266@ target_models -1 -1 -1 -1 completed_text 0 
+03DE: set_pedestrians_density_multiplier_to 2.0 
+33@ = 0 
+
+:PEDS_2P_1571
+//Remove custom GXT if language is not American English !
+if 
+not $CURRENT_LANGUAGE == 0 //American
+then
+0AE0: remove_dynamic_GXT_entry "RUN_XX"   
+0AE0: remove_dynamic_GXT_entry "RUN_06"
+end
+            
+//New language set?
+if 0A0F:   new_language_set
+    then
+        if 
+        not $CURRENT_LANGUAGE == 0 //American
+            then
+                0AE0: remove_dynamic_GXT_entry "RUN_XX"   
+                0AE0: remove_dynamic_GXT_entry "RUN_06"
+            end
+end
+//-------------------------------Dynamic separate vehicle detector-------------------------------
+if  1@==1
+    then 
+        if or
+        00F2:   actor $SECOND_PLAYER_ACTOR near_actor $PLAYER_ACTOR radius 7@ 7@ sphere 0
+        00F2:   actor $PLAYER_ACTOR near_actor $SECOND_PLAYER_ACTOR radius 7@ 7@ sphere 0
+        
+        00F4:   actor $SECOND_PLAYER_ACTOR near_actor $PLAYER_ACTOR radius 7@ 7@ sphere 0 in_car
+        00F4:   actor $PLAYER_ACTOR near_actor $SECOND_PLAYER_ACTOR radius 7@ 7@ sphere 0 in_car
+        
+        00F3:   actor $SECOND_PLAYER_ACTOR near_actor $PLAYER_ACTOR radius 7@ 7@ sphere 0 on_foot
+        00F3:   actor $PLAYER_ACTOR near_actor $SECOND_PLAYER_ACTOR radius 7@ 7@ sphere 0 on_foot        
+        then
+        06FA: allow_players_to_use_separate_vehicles 0
+        else
+        06FA: allow_players_to_use_separate_vehicles 1
+        end
+    else
+    06FA: allow_players_to_use_separate_vehicles 0
+end
+//------------------------------------------------------------------------------------------------
+if and
+   not Actor.Dead($PLAYER_ACTOR)
+   not Actor.Dead($SECOND_PLAYER_ACTOR)
+   not Car.Wrecked(283@)
+jf @PEDS_2P_1747 
+wait 0 
+gosub @PEDS_2P_2324 
+if 
+02BF:   car 283@ sunk 
+jf @PEDS_2P_1626 
+09C2: cancel_rampage 
+
+:PEDS_2P_1626
+01FA: 282@ = rampage_status 
+if 
+0735:   is_keyboard_key_pressed 22 
+jf @PEDS_2P_1653 
+04AF: 282@ = 2 // = constant 
+
+:PEDS_2P_1653
+if 
+0735:   is_keyboard_key_pressed 9 
+jf @PEDS_2P_1675 
+04AF: 282@ = 3 // = constant 
+
+:PEDS_2P_1675
+if 
+04A4:   282@ == 2 // == constant 
+jf @PEDS_2P_1708 
+0062: 265@ -= 33@ // (int) 
+jump @PEDS_2P_1914 
+
+:PEDS_2P_1708
+if 
+04A4:   282@ == 3 // == constant 
+jf @PEDS_2P_1740 
+352@ = 1 
+jump @PEDS_2P_1754 
+
+:PEDS_2P_1740
+jump @PEDS_2P_1571 
+
+:PEDS_2P_1747
+jump @PEDS_2P_1754 
+
+:PEDS_2P_1754
+if 
+  352@ == 0 
+jf @PEDS_2P_1880 
+if 
+   Actor.Dead($PLAYER_ACTOR)
+jf @PEDS_2P_1804 
+00BC: show_text_highpriority GXT 'MENU_47' time 4000 flag 1  // ~r~Player one was killed
+
+:PEDS_2P_1804
+if 
+   Actor.Dead($SECOND_PLAYER_ACTOR)
+jf @PEDS_2P_1836 
+00BC: show_text_highpriority GXT 'MENU_48' time 4000 flag 1  // ~r~Player two was killed
+
+:PEDS_2P_1836
+if and
+   Actor.Dead($SECOND_PLAYER_ACTOR)
+   Actor.Dead($PLAYER_ACTOR)
+jf @PEDS_2P_1873 
+00BC: show_text_highpriority GXT 'MENU_49' time 4000 flag 1  // ~r~Both players are dead!
+
+:PEDS_2P_1873
+jump @PEDS_2P_1896 
+
+:PEDS_2P_1880
+00BC: show_text_highpriority GXT 'MENU_50' time 4000 flag 1  // ~r~You didn't get enough kills in time!
+
+:PEDS_2P_1896
+00BA: show_text_styled GXT 'M_FAIL' time 5000 style 1  // ~r~MISSION FAILED!
+return 
+
+:PEDS_2P_1914
+265@ /= 1000 
+0652: 354@ = integer_stat 248 
+if 
+001D:   265@ > 354@ // (int) 
+jf @PEDS_2P_1957 
+0629: change_integer_stat 248 to 265@ 
+
+:PEDS_2P_1957
+if 
+   not $1845 == 8 
+jf @PEDS_2P_1982 
+$1845 += 1 
+
+:PEDS_2P_1982
+if 
+  $1845 == 8 
+jf @PEDS_2P_2025 
+01E3: show_text_1number_styled GXT 'M_PASSD' number 0 time 5000 style 1  // MISSION PASSED!
+jump @PEDS_2P_2043 
+
+:PEDS_2P_2025
+01E3: show_text_1number_styled GXT 'MENU_67' number 0 time 5000 style 1  // Level passed
+
+:PEDS_2P_2043
+Player.ClearWantedLevel($PLAYER_CHAR)
+if 
+   not Car.Wrecked(283@)
+jf @PEDS_2P_2071 
+Car.DoorStatus(283@) = 1
+
+:PEDS_2P_2071
+return 
+
+:PEDS_2P_2073
+09AC: disable_map_icons 0 
+352@ = 0 
+08F6: restore_player_group 
+Player.ClearWantedLevel($PLAYER_CHAR)
+03C7: set_sensitivity_to_crime 1.0 
+Model.Destroy(#MP5LNG)
+Model.Destroy(#BUFFALO)
+Model.Destroy(#INFERNUS)
+Model.Destroy(#ZR350)
+Model.Destroy(#BFYPRO)
+if 
+   not Car.Wrecked(283@)
+jf @PEDS_2P_2145 
+Car.DoorStatus(283@) = 1
+
+:PEDS_2P_2145
+$ONMISSION = 0 
+mission_cleanup 
+return 
+
+:PEDS_2P_2156
+02A3: enable_widescreen 1 
+if and
+   Player.Defined($PLAYER_CHAR)
+   Player.Defined($SECOND_PLAYER)
+jf @PEDS_2P_2195 
+Player.CanMove($PLAYER_CHAR) = False
+Player.CanMove($SECOND_PLAYER) = False
+
+:PEDS_2P_2195
+return 
+
+:PEDS_2P_2197
+Camera.SetBehindPlayer
+02A3: enable_widescreen 0 
+if and
+   Player.Defined($PLAYER_CHAR)
+   Player.Defined($SECOND_PLAYER)
+jf @PEDS_2P_2238 
+Player.CanMove($PLAYER_CHAR) = True
+Player.CanMove($SECOND_PLAYER) = True
+
+:PEDS_2P_2238
+Camera.Restore_WithJumpCut
+return 
+
+:PEDS_2P_2242
+0169: set_fade_color_RGB 0 0 0 
+fade 0 2000 
+
+:PEDS_2P_2257
+if 
+fading 
+jf @PEDS_2P_2281 
+wait 0 
+jump @PEDS_2P_2257 
+
+:PEDS_2P_2281
+return 
+
+:PEDS_2P_2283
+0169: set_fade_color_RGB 0 0 0 
+fade 1 2000 
+
+:PEDS_2P_2298
+if 
+fading 
+jf @PEDS_2P_2322 
+wait 0 
+jump @PEDS_2P_2298 
+
+:PEDS_2P_2322
+return 
+
+:PEDS_2P_2324
+if 
+0736:   is_keyboard_key_just_pressed 4 
+jf @PEDS_2P_2339 
+
+:PEDS_2P_2339
+if 
+0736:   is_keyboard_key_just_pressed 22 
+jf @PEDS_2P_2354 
+
+:PEDS_2P_2354
+if 
+0736:   is_keyboard_key_just_pressed 7 
+jf @PEDS_2P_2376 
+jump @PEDS_2P_1914 
+
+:PEDS_2P_2376
+if 
+0736:   is_keyboard_key_just_pressed 9 
+jf @PEDS_2P_2412 
+if 
+   not Actor.Dead($SECOND_PLAYER_ACTOR)
+jf @PEDS_2P_2412 
+05BE: AS_actor $SECOND_PLAYER_ACTOR die 
+
+:PEDS_2P_2412
+if 
+0736:   is_keyboard_key_just_pressed 5 
+jf @PEDS_2P_2427 
+
+:PEDS_2P_2427
+if 
+0736:   is_keyboard_key_just_pressed 14 
+jf @PEDS_2P_2463 
+if 
+   not Actor.Dead($PLAYER_ACTOR)
+jf @PEDS_2P_2463 
+05BE: AS_actor $PLAYER_ACTOR die 
+
+:PEDS_2P_2463
+if 
+0736:   is_keyboard_key_just_pressed 11 
+jf @PEDS_2P_2508 
+if 
+   not Actor.Dead($PLAYER_ACTOR)
+jf @PEDS_2P_2508 
+Actor.AddArmour($PLAYER_ACTOR, 100)
+055E: set_player $PLAYER_CHAR max_health += 100 
+
+:PEDS_2P_2508
+return 

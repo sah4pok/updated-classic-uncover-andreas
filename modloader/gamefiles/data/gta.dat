@@ -56,7 +56,8 @@ IDE DATA\MAPS\interior\gen_int5.IDE
 IDE DATA\MAPS\interior\savehous.IDE
 IDE DATA\MAPS\interior\stadint.IDE
 IDE DATA\MAPS\leveldes\seabed.IDE
-IDE DATA\MAPS\uc\uc.IDE
+#
+IDE DATA\MAPS\new\new.IDE
 
 # interiors
 IDE DATA\MAPS\interior\props.IDE
@@ -73,6 +74,7 @@ IDE DATA\TXDCUT.IDE
 IMG DATA\PATHS\CARREC.IMG
 IMG DATA\SCRIPT\SCRIPT.IMG
 IMG MODELS\CUTSCENE.IMG
+IMG MODELS\PLAYER.IMG
 
 # have to load map.zon before any of the IPLs
 IPL DATA\MAP.ZON
@@ -125,12 +127,13 @@ IPL DATA\MAPS\interior\stadint.IPL
 IPL DATA\MAPS\interior\savehous.IPL
 
 # level design
+IPL DATA\MAPS\new\country.IPL
+IPL DATA\MAPS\new\int.IPL
+IPL DATA\MAPS\new\la.IPL
+IPL DATA\MAPS\new\sf.IPL
+IPL DATA\MAPS\new\vegas.IPL
+#
 IPL DATA\MAPS\leveldes\levelmap.IPL
-IPL DATA\MAPS\uc\uc_country.IPL
-IPL DATA\MAPS\uc\uc_int.IPL
-IPL DATA\MAPS\uc\uc_la.IPL
-IPL DATA\MAPS\uc\uc_sf.IPL
-IPL DATA\MAPS\uc\uc_vegas.IPL
 IPL DATA\MAPS\leveldes\seabed.IPL
 IPL DATA\MAPS\paths.ipl
 IPL DATA\MAPS\paths2.ipl

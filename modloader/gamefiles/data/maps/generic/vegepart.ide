@@ -168,7 +168,7 @@ objs
 786, lod_largefurs06, lod_veg, 600, 2097280 # Unused
 787, lod_largefurs07, lod_veg, 600, 2097280 # Unused
 788, lod_largefurs05, lod_veg, 600, 2130048 # Unused
-789, hashburytree4sfs, gta_tree_boak, 150, 132 # Unused in UC
+789, hashburytree4sfs, gta_tree_boak, 150, 132 # Unused
 790, sm_fir_tallgroup, gta_tree_pine, 299, 2138116 # Done
 791, vbg_fir_copse, gta_tree_pine, 299, 2130052
 792, aw_streettree1, gta_tree_bevhills, 150, 2109572

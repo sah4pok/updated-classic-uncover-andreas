@@ -1,0 +1,36 @@
+txdp
+
+lee_bdupsflat, bdup_add
+bdupshifi, bdup_add
+
+librest, liberty_add
+bistro, liberty_add
+
+break_street1, exterior_add
+
+cj_kitchen, interiors_add
+gb_ornaments01, interiors_add
+police_props_un, interiors_add
+gf5, interiors_add
+sweetsmain, interiors_add
+cj_airprt, interiors_add
+cj_ammo, interiors_add
+cj_beds, interiors_add
+cj_casino_prop, interiors_add
+cj_commercial, interiors_add
+lee_stripclub1, interiors_add
+cjtemp, interiors_add
+shopping_freezers, interiors_add
+cj_ff, interiors_add
+cj_hi_fi, interiors_add
+cj_bs_bathroom, interiors_add
+gf2, interiors_add
+cj_office, interiors_add
+lasmallsave, interiors_add
+plants, interiors_add
+genhotelsave, interiors_add
+shopping_acc, interiors_add
+cj_lighting, interiors_add
+CJ_HOTEL_poor, interiors_add
+cj_furniture, interiors_add
+end
